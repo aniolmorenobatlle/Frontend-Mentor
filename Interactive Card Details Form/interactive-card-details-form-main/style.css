@@ -46,6 +46,12 @@ input {
     width: 100%;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 ::placeholder {
     color: var(--dark-grayish-violet);
 }
@@ -128,7 +134,7 @@ input {
         justify-content: space-between;
         align-items: center;
 
-        p {
+        p, span {
             font-size: 0.8rem;
             font-weight: 300;
         }
