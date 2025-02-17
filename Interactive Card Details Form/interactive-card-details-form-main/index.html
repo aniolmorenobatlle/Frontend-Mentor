@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
   <link rel="stylesheet" href="style.css">
 
@@ -17,13 +17,13 @@
 
   <div class="container">
     <div class="image-section">
-      <img src="/images/bg-main-desktop.png" alt="Main background image" class="main-bg">
+      <img src="images/bg-main-desktop.png" alt="Main background image" class="main-bg">
 
       <div class="cards">
 
         <div class="front-card">
 
-          <img src="/images/card-logo.svg" alt="Card Logo" class="card-logo">
+          <img src="images/card-logo.svg" alt="Card Logo" class="card-logo">
           
           <div class="card-number">
             <p id="card-number-result">0000 0000 0000 0000</p>
@@ -50,8 +50,8 @@
     </div>
 
     <div class="form-section">
-      <div class="card-info">
-        <form action="" class="card-form">
+      <div id="card-info" class="card-info">
+        <form class="card-form">
           <div class="card-type">
             <label for="ch-name" class="card-titles">CARDHOLDER NAME</label>
             <input 
@@ -114,9 +114,17 @@
 
           </div>
 
-          <button type="submit" class="submit-btn">Confirm</button>
+          <button type="submit" id="submit-btn" class="submit-btn">Confirm</button>
 
         </form>
+      </div>
+
+      <div id="completation" class="completation">
+        <img src="images/icon-complete.svg" alt="Complete">
+
+        <h1>THANK YOU!</h1>
+        <p>We've added your card details</p>
+        <button id="continue-btn">Continue</button>
       </div>
     </div>
 

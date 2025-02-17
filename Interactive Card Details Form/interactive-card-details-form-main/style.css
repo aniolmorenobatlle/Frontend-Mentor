@@ -51,6 +51,18 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+button {
+    background: var(--very-dark-violet);
+    color: white;
+    padding: 0.75rem;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
 ::placeholder {
     color: var(--dark-grayish-violet);
 }
@@ -106,7 +118,7 @@ input::-webkit-inner-spin-button {
     padding-top: 20px;
     margin-right: 12rem;
     border-radius: 10px;
-    background-image: url('/images/bg-card-front.png');
+    background-image: url('images/bg-card-front.png');
     background-size: cover;
     background-position: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -136,6 +148,7 @@ input::-webkit-inner-spin-button {
         p, span {
             font-size: 0.8rem;
             font-weight: 300;
+            text-transform: uppercase;
         }
     }
 }
@@ -145,7 +158,7 @@ input::-webkit-inner-spin-button {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    background-image: url('/images/bg-card-back.png');
+    background-image: url('images/bg-card-back.png');
     background-size: cover;
     background-position: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -204,13 +217,16 @@ input::-webkit-inner-spin-button {
     width: 80px;
 }
 
-.submit-btn {
-    background: var(--very-dark-violet);
-    color: white;
-    padding: 0.75rem;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
+/* Complete form */
+.completation {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+
+    p {
+        color: var(--dark-grayish-violet);
+        margin-top: 0;
+    }
 }

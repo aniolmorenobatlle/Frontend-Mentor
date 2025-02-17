@@ -28,7 +28,7 @@ function clearError(inputElement, errorElement) {
 }
 
 cardName.addEventListener('input', function (event) {
-    cardNameResult.innerText = event.target.value || 'Jane Appleseed';
+    cardNameResult.innerText = event.target.value || 'JANE APPLESEED';
 
     if (cardName.value === '') {
         showError(cardName, inputErrorName, 'Cannot be empty');
@@ -97,3 +97,30 @@ cardCvv.addEventListener('input', function (event) {
 function formatCardNumber(value) {
     return value.replace(/\D/g, '').replace(/(.{4})/g, '$1 ').trim();
 }
+
+// Sumbit button
+document.getElementById('submit-btn').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('card-info').style.display = 'none';
+
+    document.getElementById('completation').style.display = 'flex';
+});
+
+document.getElementById('continue-btn').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('completation').style.display = 'none';
+
+    cardNumberResult.innerText = '0000 0000 0000 0000';
+    cardNameResult.innerText = 'JANE APPLESEED';
+    cardMonthResult.innerText = '00';
+    cardYearResult.innerText = '00';
+    cardCvvResult.innerText = '000';
+
+    cardNumber.value = '';
+    cardName.value = '';
+    cardMonth.value = '';
+    cardYear.value = '';
+    cardCvv.value = '';
+
+    document.getElementById('card-info').style.display = 'flex';
+});
