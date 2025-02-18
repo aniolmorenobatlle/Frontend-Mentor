@@ -31,7 +31,8 @@ Users should be able to:
 
 ### Links
 
-- URL: [Add solution URL here](https://your-solution-url.com)
+- URL: [WebSite Demo](https://interactive-card-details-form.aniolmorenobatlle.com/)
+- GitHub: [Github](https://github.com/aniolmorenobatlle/Frontend-Mentor/tree/main/Interactive%20Card%20Details%20Form/interactive-card-details-form-main)
 
 ## My process
 
