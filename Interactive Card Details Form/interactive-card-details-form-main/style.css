@@ -90,6 +90,10 @@ button {
     width: 100%;
 }
 
+.image-section .main-bg-mobile {
+    display: none;
+}
+
 .cards {
     display: flex;
     flex-direction: column;
@@ -230,3 +234,99 @@ button {
         margin-top: 0;
     }
 }
+
+
+/* Responsive */
+@media screen and (max-width: 1350px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-section .main-bg {
+        display: none;
+    }
+
+    .image-section .main-bg-mobile {
+        display: flex;
+        width: 100dvw;
+        max-width: 100%;
+        height: 240px;
+    }
+
+    .cards {
+        top: auto;
+        left: auto;
+        transform: none;
+        width: auto;
+    }
+
+    .front-card {
+        height: 150px;
+        width: 280px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin: 0;
+        top: 20%;
+        right: 8%;
+        z-index: 99999;
+
+        .card-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 35px;
+        }
+        
+        .card-number {
+            p {
+                font-size: 1.2rem;
+                font-weight: 500;
+                margin: 0;
+                line-height: 2;
+            }
+        }
+    
+        .card-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            p, span {
+                font-size: 0.7rem;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .back-card {
+        position: absolute;
+        height: 150px;
+        width: 280px;
+        padding: 0;
+        margin: 0;
+        left: 8%;
+        .cvv {
+            position: absolute;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: white;
+        }
+    }
+
+    .form-section {
+        align-items: normal;
+        margin-top: 3rem;
+    }
+}
+
